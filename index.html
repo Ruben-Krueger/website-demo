@@ -19,10 +19,12 @@
 
     <title>Pulmera </title>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!--Custom CSS-->
     <link href="main.css" rel="stylesheet" type="text/css"/>
@@ -30,27 +32,33 @@
     <!--Custom Font-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 
-    <!--Particle Effect-->
 
-    <script src="particles.js"></script>
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Pulmera</a>
+<nav class="navbar navbar-expand-lg navbar-light bg-light custom-nav">
+    <a class="navbar-brand" href="index.html">Pulmera</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
+
             <li class="nav-item">
-                <a class="nav-link" href="#">Next Generation Lung Diagnostics</a>
+                <a class="nav-link" href="#" id="lung-cancer-btn">Lung Cancer</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#" id="our-mission-btn">Our Mission</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#" id="our-team-btn">Our Team</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Contact Us</a>
+                <a class="nav-link" href="#" id="our-partner-btn">Our Partners and Support </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" id="contact-us-btn">Contact Us</a>
             </li>
 
         </ul>
@@ -60,66 +68,137 @@
 <!-- Intro Header -->
 <header class="masthead">
         <div class="container">
-            <div class="row">
-                <h1 class="brand-heading">Pulmera</h1>
-                    <a href="#about" class="btn btn-circle js-scroll-trigger"><i class="fa fa-angle-double-down animated"></i></a>
+            <div class="row justify-content-center tracking-in-expand">
+                    <h1 class="brand-heading">Pulmera</h1>
+            </div>
+            <div class="row tracking-in-expand justify-content-center">
+                <h1 class="brand-slogan">Next Generation Lung Diagnostics</h1>
             </div>
         </div>
 </header>
 
-
-<!-- Next Generation Lung Diagnostics Section -->
-<div id="lung">
+<!-- Lung Cancer Section -->
+<section id="lung-cancer" data-aos="fade-up">
     <div class="container">
         <div class="row justify-content-center">
-            <h1>Next Generation Lung Diagnostics</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
+            <h1>Lung Cancer</h1>
+            Lung cancer is a type of cancer that begins in the lungs. Your lungs are two spongy organs in your chest that take in oxygen when you inhale and release carbon dioxide when you exhale.
+
+            Lung cancer is the leading cause of cancer deaths in the United States, among both men and women. Lung cancer claims more lives each year than do colon, prostate, ovarian and breast cancers combined.
+
         </div>
     </div>
-</div>
+</section>
 
-
-<!-- About Section -->
-<div id="about">
+<!-- Our Mission Section -->
+<section id="our-mission" data-aos="fade-up">
     <div class="container">
         <div class="row justify-content-center">
-            <h1>About</h1>
 
-            <div class="row">
-                <div class="col">
-                    <h2>Bryan Hartley, MD</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-                </div>
-                <div class="col">
-                    <h2>Harmeet Bedi, MD</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-                </div>
-                <div class="col">
-                    <div class="col">
-                        <h2>Other Founder</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                    </div>
-                </div>
+
+            <h1>Our Mission</h1>
+
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+        </div>
+    </div>
+</section>
+
+<!-- Our Team Section -->
+<section id="our-team" data-aos="fade-up">
+    <div class="container">
+        <div class="row justify-content-center">
+            <h1>Our Team</h1>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col">
+                <h2>Bryan Hartley, MD</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+            <div class="col">
+                <h2>Harmeet Bedi, MD</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+            <div class="col">
+                <h2>Other Founder</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+
             </div>
         </div>
     </div>
-</div>
+</section>
 
-<div id="particles-js"></div>
+
+<!-- Our Partners and Support Section -->
+<section id="our-partner" data-aos="fade-up">
+    <div class="container">
+        <div class="row justify-content-center">
+                <h1>Our Partners</h1>
+        </div>
+        <div class="row justify-content-center" >
+            <div class="col">
+                <h3>Major Company One</h3>
+            </div>
+            <div class="col">
+                <h3>Major Company Two</h3>
+            </div>
+            <div class="col">
+                <h3>Company Three</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
 
 
 <!-- Contact Section -->
-<div id="contact" class="text-center">
+<section id="contact-us" class="text-center" data-aos="fade-up">
     <div class="container">
-        <div class="row justify-content-center">
-            <h1>Contact</h1>
-        </div>
+        <h1>Contact Us</h1>
+            <form class="shake" role="form" method="post" id="contactForm" name="contact-form" data-toggle="validator" action="https://formspree.io/ruben1@stanford.edu" >
+               <div class="row justify-content-center">
+                   <div class="col-4">
+                       <div class="form-group label-floating">
+                           <label class="control-label" for="name">Name</label>
+                           <input class="form-control" id="name" type="text" name="name" required data-error="Please enter your name">
+                           <div class="help-block with-errors"></div>
+                       </div>
+
+                       <div class="form-group label-floating">
+                           <label class="control-label" for="email">Email</label>
+                           <input class="form-control" id="email" type="email" name="email" required data-error="Please enter your email">
+                           <div class="help-block with-errors"></div>
+                       </div>
+
+                   </div>
+                <div class="col-6">
+                    <div class="form-group label-floating">
+                        <label class="control-label">Subject</label>
+                        <input class="form-control" id="msg_subject" type="text" name="subject" required data-error="Please enter your message subject">
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <!-- Message -->
+                    <div class="form-group label-floating">
+                        <label for="message" class="control-label">Message</label>
+                        <textarea class="form-control" id="message" name="message" required data-error="Write your message"></textarea>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <!-- Form Submit -->
+                    <div class="form-submit">
+                        <button class="btn btn-dark" type="submit" id="form-submit">Send Message</button>
+                        <div id="msgSubmit" class="h3 text-center hidden"></div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+               </div>
+            </form>
     </div>
-</div>
+</section>
+
+
 
 
 <footer>
@@ -129,7 +208,48 @@
 </footer>
 
 <script>
-    // particlesJS("particles-js", {"particles":{"number":{"value":80,"density":{"enable":true,"value_area":800}},"color":{"value":"#ffffff"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0.5,"random":false,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":3,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":true,"distance":150,"color":"#ffffff","opacity":0.4,"width":1},"move":{"enable":true,"speed":6,"direction":"none","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":true,"mode":"repulse"},"onclick":{"enable":true,"mode":"push"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":1}},"bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});var count_particles, stats, update; stats = new Stats; stats.setMode(0); stats.domElement.style.position = 'absolute'; stats.domElement.style.left = '0px'; stats.domElement.style.top = '0px'; document.body.appendChild(stats.domElement); count_particles = document.querySelector('.js-count-particles'); update = function() { stats.begin(); stats.end(); if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) { count_particles.innerText = window.pJSDom[0].pJS.particles.array.length; } requestAnimationFrame(update); }; requestAnimationFrame(update);;
+
+
+
+     $("#lung-cancer-btn").click(function() {
+         $([document.documentElement, document.body]).animate({
+             scrollTop: $("#lung-cancer").offset().top
+         }, 200);
+     });
+
+
+     $("#our-mission-btn").click(function() {
+         $([document.documentElement, document.body]).animate({
+             scrollTop: $("#our-mission").offset().top
+         }, 200);
+     });
+
+
+
+
+     $("#our-team-btn").click(function() {
+         $([document.documentElement, document.body]).animate({
+             scrollTop: $("#our-team").offset().top
+         },200);
+     });
+
+
+
+
+     $("#our-partner-btn").click(function() {
+         $([document.documentElement, document.body]).animate({
+             scrollTop: $("#our-partner").offset().top
+         }, 200);
+     });
+
+
+     $("#contact-us-btn").click(function() {
+         $([document.documentElement, document.body]).animate({
+             scrollTop: $("#contact-us").offset().top
+         }, 200);
+     });
+
+     AOS.init();
 </script>
 
 
