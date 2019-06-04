@@ -11,6 +11,16 @@ body{font-family: "Raleway", sans-serif}
     color:white;
 }
 
+@media (max-width:400px) {
+    .brand-heading {
+        font-size: 40px;
+    }
+
+    .brand-slogan {
+        font-size: 30px;
+    }
+}
+
 p {
     font-size: 18px;
 }
@@ -47,30 +57,21 @@ p {
     background-size: cover;
     /*filter: brightness(40%);*/
 
-
 }
 
 
 
 
-.bg-text {
-    color: white;
-    font-weight: bold;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    width: 80%;
-    padding: 20px;
-    text-align: center;
-}
 
 .form-control {
     /*border: 0;*/
     border-width: 0 0 2px;
     border-color: black;
 
+}
+
+.partner-row {
+    margin-top: 20px
 }
 
 
@@ -137,4 +138,7 @@ section {
         opacity: 1;
     }
 }
+
+
+
 
