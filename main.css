@@ -12,9 +12,9 @@ body{font-family: "Raleway", sans-serif}
 
 
 @media (max-width:400px) {
-   /*.logo {*/
-        /*width: 100px;*/
-   /*}*/
+   .partner-img {
+       min-width: 50px;
+   }
 }
 
 /*img {*/
@@ -23,9 +23,6 @@ body{font-family: "Raleway", sans-serif}
     /*left: 50%;*/
 /*}*/
 
-.partner-img {
-    object-fit: cover;
-}
 
 
 p {
@@ -110,8 +107,6 @@ footer {
     border-top: 1px solid grey;
 
 }
-
-
 
 
 
